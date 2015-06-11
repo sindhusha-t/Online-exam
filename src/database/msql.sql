@@ -1,5 +1,5 @@
 create database stu;
-use database stu;
+use stu;
 create table students(id integer,name varchar(20));
 insert into students values('517','sindhusha');
 create table questions(id integer,que varchar(100),opt1 varchar(100),opt2 varchar(100),opt3 varchar(100),opt4 varchar(100),topic varchar(40),ans integer);
