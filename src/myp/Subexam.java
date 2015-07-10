@@ -22,7 +22,7 @@ public Subexam(String name,String topicn)throws NullPointerException
 try
 {
 Class.forName("com.mysql.jdbc.Driver");
-Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/stu","root","sindhusha28031995");
+Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/stu","root","");
 Statement stmt=con.createStatement();
 rs=stmt.executeQuery("SELECT * FROM questions WHERE topic='"+topicn+"'");
 name1=name;subname=topicn;
