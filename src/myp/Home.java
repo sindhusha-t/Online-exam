@@ -34,7 +34,7 @@ public void actionPerformed(ActionEvent ae)
 try
 {
 Class.forName("com.mysql.jdbc.Driver");
-Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/stu","root","sindhusha28031995");
+Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/stu","root","");
 Statement stmt=con.createStatement();
 ResultSet rs=stmt.executeQuery("SELECT id,name FROM students");
 while(rs.next())
